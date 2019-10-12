@@ -1,5 +1,8 @@
 {
   "oxur_qole.config.server.veinminerEnabled": "enabled",
   "oxur_qole.config.server.veinminerEnchantmentFactor": "enchantmentFactor",
-  "enchantment.oxur_qole.veinminer": "Veinminer"
+  "enchantment.oxur_qole.veinminer": "Veinminer",
+  "enchantment.oxur_qole.veinminer I": "Veinminer I",
+  "enchantment.oxur_qole.veinminer II": "Veinminer II",
+  "enchantment.oxur_qole.veinminer III": "Veinminer III"
 }
