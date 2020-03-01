@@ -50,7 +50,7 @@ public class BreakEventHandler extends AbstractEventHandler {
         if (!eventBlockState.getBlock().canHarvestBlock(eventBlockState, world, eventPos, player)) return;
         if (!eventBlockState.getBlock().getTags().contains(Tags.Blocks.ORES.getId())) return;
         if (player.abilities.isCreativeMode) return;
-        if (player.isSneaking()) return;
+        if (player.isCrouching()) return;
         ListNBT enchantments = toolStack.getEnchantmentTagList();
         for (INBT enchantment : enchantments) {
             if (!(enchantment instanceof CompoundNBT)) return;
