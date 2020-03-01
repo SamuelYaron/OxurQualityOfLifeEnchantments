@@ -24,8 +24,14 @@ public class QoLEModConfig {
     public static class Server {
         public final ForgeConfigSpec.BooleanValue veinminerEnabled;
         public final ForgeConfigSpec.IntValue veinminerSizeFactor;
+        public final ForgeConfigSpec.BooleanValue hoeHarvestEnabled;
 
         Server(final ForgeConfigSpec.Builder builder) {
+            builder.comment("Enable and disable certain extra features").push("extraFeatures");
+            hoeHarvestEnabled = builder
+                    .comment("Enables or disables harvesting crops with the hoe.")
+                    .define("hoeHarvestEnabled", true);
+            builder.pop();
             builder.comment("Enable and disable enchantments").push("enchantments");
             veinminerEnabled = builder
                     .comment("Enables or disables the veinminer enchantment")

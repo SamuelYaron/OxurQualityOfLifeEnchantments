@@ -8,6 +8,15 @@ being too powerful. Every enchantment can be enabled or disabled and configured 
 If you have wishes or ideas for more enchantments to be added to this collection, feel free to make a 
 [request](https://github.com/SamuelYaron/OxurQualityOfLifeEnchantments/issues).
 
+## Extra features
+
+### Hoe harvesting
+If enabled it allows any player to harvest crops and automatically replant them when using a hoe. The hoe gets damaged
+and one seed is removed from the harvested drops to *pay* for the replanting.
+
+**Configuration options**
+- hoeHarvestEnabled: Enables the feature if True, otherwise disables it.
+
 ## Enchantments
 
 ### Veinminer I-III
