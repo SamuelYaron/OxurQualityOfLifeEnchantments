@@ -1,6 +1,7 @@
 package de.oxur.qole;
 
 import de.oxur.qole.events.BreakEventHandler;
+import de.oxur.qole.events.RightClickBlockEventHandler;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.ModLoadingContext;
 import net.minecraftforge.fml.common.Mod;
@@ -26,6 +27,7 @@ public class QoLEMod {
     public void setup(FMLCommonSetupEvent event) {
         LOGGER.debug("Setup event for {}", MODID);
         BreakEventHandler.INSTANCE.register();
+        RightClickBlockEventHandler.INSTANCE.register();
     }
 
 }
